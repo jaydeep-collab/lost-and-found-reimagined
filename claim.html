@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Claim Item | Lost & Found</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Lost<span>&</span>Found
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="browse.html">
+                Browse Items
+            </a>
+
+            <a href="my-reports.html">
+                My Reports
+            </a>
+
+        </nav>
+
+
+        <a
+            href="login.html"
+            class="login-btn"
+        >
+            Login
+        </a>
+
+    </header>
+
+
+    <main>
+
+        <section class="claim-section">
+
+            <div class="claim-card">
+
+                <p class="tagline">
+                    OWNERSHIP VERIFICATION
+                </p>
+
+
+                <h1>
+                    Claim This Item
+                </h1>
+
+
+                <p class="claim-subtitle">
+                    Answer a few private questions to help
+                    verify that you are the actual owner.
+                </p>
+
+
+                <div
+                    id="claimItemInfo"
+                    class="claim-item-info"
+                ></div>
+
+
+                <form class="claim-form">
+
+                    <div class="form-group">
+
+                        <label for="claimDescription">
+                            Describe something about the item
+                            that was not publicly mentioned.
+                        </label>
+
+                        <textarea
+                            id="claimDescription"
+                            rows="4"
+                            placeholder="Enter a private detail..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="claimProof">
+                            Additional ownership information
+                        </label>
+
+                        <textarea
+                            id="claimProof"
+                            rows="4"
+                            placeholder="Example: unique mark, sticker, serial detail, etc."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="primary-btn"
+                    >
+                        Submit Ownership Verification
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Lost & Found —
+            Reconnecting people with their belongings.
+        </p>
+
+    </footer>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>

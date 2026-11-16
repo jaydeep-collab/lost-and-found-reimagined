@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Found Item | Lost & Found</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">Lost<span>&</span>Found</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Browse Items</a>
+            <a href="#">My Reports</a>
+        </nav>
+
+        <button class="login-btn">Login</button>
+    </header>
+
+    <main>
+
+        <section class="form-section">
+
+            <div class="form-header">
+                <p class="tagline">REPORT FOUND ITEM</p>
+
+                <h1>Tell us what you found.</h1>
+
+                <p>
+                    Add as much information as possible so the owner
+                    can identify and recover their belongings.
+                </p>
+            </div>
+
+            <form class="found-form">
+
+                <div class="form-group">
+                    <label for="itemName">Item Name</label>
+
+                    <input
+                        type="text"
+                        id="itemName"
+                        placeholder="e.g. Black Wallet"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+
+                        <select id="category" required>
+                            <option value="">Select category</option>
+                            <option>Electronics</option>
+                            <option>Wallet / Money</option>
+                            <option>Keys</option>
+                            <option>Documents</option>
+                            <option>Clothing</option>
+                            <option>Bag</option>
+                            <option>Jewellery</option>
+                            <option>Accessories</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="color">Color</label>
+
+                        <input
+                            type="text"
+                            id="color"
+                            placeholder="e.g. Black"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+
+                    <textarea
+                        id="description"
+                        rows="5"
+                        placeholder="Describe the item and where you found it..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Found Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. City Mall, Food Court"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="date">Date Found</label>
+
+                        <input
+                            type="date"
+                            id="date"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="time">Approximate Time</label>
+
+                        <input
+                            type="time"
+                            id="time"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Upload Photo</label>
+
+                    <input
+                        type="file"
+                        id="photo"
+                        accept="image/*"
+                    >
+
+                    <small>
+                        Upload a clear photo of the item if available.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="privateClue">
+                        Private Verification Detail
+                    </label>
+
+                    <input
+                        type="text"
+                        id="privateClue"
+                        placeholder="Example: Scratch near the zipper"
+                    >
+
+                    <small>
+                        Keep one identifying detail private for ownership verification.
+                    </small>
+                </div>
+
+                <div class="form-actions">
+
+                    <a href="index.html" class="cancel-btn">
+                        Cancel
+                    </a>
+
+                    <button type="submit" class="primary-btn">
+                        Submit Found Report
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Lost & Found — Reconnecting people with their belongings.</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
